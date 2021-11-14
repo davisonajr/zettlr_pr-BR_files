@@ -1,5 +1,1173 @@
 SET UTF-8
-TRY eariosntmdculpgbvfíhzçãáqxjéêóôüúâAEBõDMCSRPLGVFTNIJHUkwyÉZOÁQKàÂYWÓÍ
+TRY áàãâéêíóõôúüçesianrtolcdugmphbyfvkwjqxz
+
+#   VERO - Verificador Ortográfico Livre - Versão 3.2
+#   Copyright (C) 2006 - 2013  por Raimundo Santos Moura
+#   <raimundo.smoura@gmail.com>
+#   Brasil - outubro 2013
+#   Este é um dicionário para correção ortográfica da língua Portuguesa   
+#   para o Hunspell.                                                       
+#   Este programa é livre e pode ser redistribuído e/ou modificado nos    
+#   termos Licença Pública Geral Menor versão 3 (LGPLv3), como publicado
+#   pela Free Software Foundation e pela Mozilla Public License como
+#   publicado pela Mozilla Foundation.
+
+
+MAP 6
+MAP aáãâAÁÃÂ
+MAP eéêEÉÊ
+MAP iíIÍ
+MAP oóõôOÓÕÔ
+MAP uúüUÚÜ
+MAP cçCÇ
+
+BREAK 64
+BREAK ^ex-
+BREAK ^Ex-
+BREAK ^EX-
+BREAK ^recém-
+BREAK ^Recém-
+BREAK ^RECÉM-
+BREAK ^pós-
+BREAK ^Pós-
+BREAK ^PÓS-
+BREAK ^pró-
+BREAK ^Pró-
+BREAK ^PRÓ-
+BREAK -alvo$
+BREAK -chave$
+BREAK -piloto$
+BREAK -padrão$
+BREAK -chefe$
+BREAK ^Vice-
+BREAK ^vice-
+BREAK ^VICE-
+BREAK ^além-
+BREAK ^aquém-
+BREAK ^Além-
+BREAK ^Aquém-
+BREAK ^não-
+BREAK ^Não-
+BREAK ^NÃO-
+BREAK -fêmeas$
+BREAK -fêmea$
+BREAK -macho$
+BREAK -machos$
+BREAK ^quase-
+BREAK ^Quase-
+BREAK ^QUASE-
+BREAK -teste$
+BREAK -Teste$
+BREAK -TESTE$
+BREAK -AC$
+BREAK -AL$
+BREAK -AP$
+BREAK -AM$
+BREAK -BA$
+BREAK -CE$
+BREAK -DF$
+BREAK -GO$
+BREAK -ES$
+BREAK -MA$
+BREAK -MT$
+BREAK -MS$
+BREAK -MG$
+BREAK -PA$
+BREAK -PB$
+BREAK -PR$
+BREAK -PE$
+BREAK -PI$
+BREAK -RJ$
+BREAK -RN$
+BREAK -RS$
+BREAK -RO$
+BREAK -RR$
+BREAK -SP$
+BREAK -SC$
+BREAK -SE$
+BREAK -TO$
+
+
+#   Número máximo de sugestões       
+MAXNGRAMSUGS 12
+
+#   Não sugerir       
+NOSUGGEST Ý
+
+FORBIDDENWORD ý
+
+MAXDIFF 10
+
+ONLYMAXDIFF
+
+#   palavras raras ou com grafia incorreta       
+WARN ~
+
+
+# melhorar a sugestão de palavras
+REP 1055
+REP -               s-
+REP -               r
+REP -               s
+REP -a-             _a_
+REP -com-           _com_
+REP -da-            _da_
+REP -de-            _de_
+REP -jóia           joia
+REP -l              l
+REP -r              rr
+REP -s              ss
+REP a               á
+REP a               ã
+REP a               â
+REP ã               â
+REP â               ã
+REP a               a-
+REP a               á-
+REP á               á-
+REP ã               ã-
+REP a               a-h
+REP a-              a
+REP á-              á
+REP ã-              ã
+REP a-              o-
+REP a-h             a
+REP abesse          oubesse
+REP abeu            oube
+REP abera           oubera
+REP aberam          ouberam
+REP ackup           ecape
+REP ad              izad
+REP ada             ável
+REP adas            áveis
+REP ado             ável
+REP ados            áveis
+REP ãe              ão
+REP ãe              õe
+REP agu             águ
+REP ainers          êineres
+REP ala             á-la
+REP ala             á-las
+REP alh             áli
+REP all             ol
+REP alo             á-lo
+REP alos            á-los
+REP am              ã
+REP am              an
+REP âm              ân
+REP am              ão
+REP ampanhi         ampainh
+REP an              ã
+REP an              am
+REP ân              âm
+REP ância           ança
+REP ânio-           anio
+REP ão              ãe
+REP ao              ão
+REP ão              am
+REP ão              õe
+REP aprazi          aprouve
+REP aprazeste       aprouveste
+REP aprazeu         aprouve
+REP aprazestes      aprouvestes
+REP aprazeram       aprouveram
+REP aprazera        aprouvera
+REP aprazeras       aprouveras
+REP aprazêramos     aprouvéramos
+REP aprazéramos     aprouvéramos
+REP aprazisse       aprouvesse
+REP aprazisses      aprouvesse
+REP aprazíssemo     aprouvéssemo
+REP aprazísseis     aprouvésseis
+REP aprazissem      aprouvessem
+REP aqu             áqu
+REP ára-            ara
+REP áre             ári
+REP ars             raç
+REP as-             o-
+REP ás              az
+REP athlon          átlon
+REP ásticamente     asticamente
+REP áticamente      aticamente
+REP áudio-          audio
+REP ayout           eiaute
+REP az              ás
+REP azinh           inh
+REP b               b-
+REP b-              b
+REP bakup           becape
+REP ben             bem-
+REP bilidade        lidade
+REP boy             bói
+REP brid            bert
+REP btâ             bstâ
+REP bta             bstâ
+REP c               ç
+REP c               s
+REP c               sc
+REP ç               c
+REP ç               ce
+REP ç               ss
+REP cao             ção
+REP cão             ção
+REP ção             mento
+REP cc              c
+REP cç              x
+REP ce              sse
+REP ceromano        ser_humano
+REP cerumano        ser_humano
+REP ch              x
+REP chi             qui
+REP ci              ssi
+REP cie             sciê
+REP cinss           sinc
+REP ck              que
+REP copérnic        unúmbi
+REP cõ              çõ
+REP çõe             mento
+REP cs              x
+REP dent            tend
+REP des             dis
+REP devagar         vagarosa
+REP difissi         difíci
+REP defissio        difícil
+REP difissio        difícil
+REP dis             des
+REP e               ê
+REP e               é
+REP éi              ei
+REP é               ê
+REP ê               é
+REP e               e-
+REP e               ê-
+REP é               é-
+REP ê               ê-
+REP e               e-h
+REP é               é-h
+REP e-              e
+REP é-              é
+REP é-              e
+REP ê-              ê
+REP e-h             e
+REP é-h             é
+REP ebã             ibã
+REP ebam            ibã
+REP eban            ibã
+REP eem             êm
+REP el              éis
+REP elh             éli
+REP em              en
+REP ém              én
+REP êm              ên
+REP en              em
+REP én              ém
+REP ên              êm
+REP enalte          ênalti
+REP enci            ment
+REP ensi            ênci
+REP épit            ept
+REP ereo            eoro
+REP erug            irurg
+REP es              ex
+REP es              ez
+REP ês              ez
+REP ês              ez
+REP este            éster
+REP eteira          auta
+REP eteiro          auta
+REP ex              es
+REP ez              es
+REP ez              és
+REP ez              ês
+REP ezinh           inh
+REP ffice           ffice.org
+REP gcoc            guecoque
+REP gem             mento
+REP gen             mento
+REP gkok            guecoque
+REP g               gue
+REP g               j
+REP gs              gues
+REP hak             acc
+REP hkek            queque
+REP i               e
+REP i               í
+REP í               i
+REP i               i-
+REP i               í-
+REP í               í-
+REP i               i-h
+REP i-              i
+REP í-              í
+REP i-h             i
+REP ida             ível
+REP idas            íveis
+REP ideo            ídeo
+REP ido             ível
+REP idos            íveis
+REP ifem            ífen
+REP ilh             íli
+REP im              in
+REP impecíli        empecilh
+REP ím              ín
+REP in              im
+REP ín              ím
+REP in              não_
+REP inh             azinh
+REP inh             ezinh
+REP inh             ilzinh
+REP inh             ozinh
+REP it              inh
+REP ítim            itm
+REP izad            ad
+REP j               g
+REP j               gi
+REP je              ge
+REP jê              gê
+REP ji              gi
+REP jí              gí
+REP jing            ji
+REP ka              ca
+REP ká              cá
+REP ke              que
+REP kê              quê
+REP Kg              kg
+REP Khmer           Cambojano
+REP ki              qui
+REP kilo            quilô
+REP kiwi            quiuí
+REP ko              co
+REP ku              cu
+REP Kwanyama        Cuanhama
+REP l               is
+REP l               l-
+REP l               u
+REP l               u
+REP l-              l
+REP la              -la-
+REP las             -las-
+REP lç              ls
+REP leb             reb
+REP lg              l_G
+REP lhe             -lhe-
+REP lhes            -lhes-
+REP li              lh
+REP lidade          bilidade
+REP lo              -lo-
+REP los             -los-
+REP ls              lç
+REP lto-a           utoa
+REP lto-b           utob
+REP lto-c           utoc
+REP lto-d           utod
+REP lto-e           utoe
+REP lto-f           utof
+REP lto-g           utog
+REP lto-i           utoi
+REP lto-j           utoj
+REP lto-l           utol
+REP lto-m           utom
+REP lto-n           uton
+REP lto-p           utop
+REP lto-q           utoq
+REP lto-r           utor
+REP lto-s           utos
+REP lto-t           utot
+REP lto-u           utou
+REP lto-v           utov
+REP lto-x           utox
+REP lto-z           utoz
+REP m               m-
+REP m-              m
+REP me              -me-
+REP mento           ção
+REP mento           çõe
+REP metragens       s-metragens
+REP n               n-
+REP n-              n
+REP não-            in
+REP não-            ir
+REP ne              nde 
+REP nhe             in
+REP nhi             in
+REP no-a-ma         no_a_ma
+REP nos             -nos-
+REP o               ó
+REP o               õ
+REP o               ô
+REP ó               ô
+REP ói              oi
+REP ô               ó
+REP o               o-
+REP o               ó-
+REP ó               ó-
+REP ô               ô-
+REP o               o-h
+REP ó               ó-h
+REP o-eletrô        oeletro
+REP o-              o
+REP ó-              o
+REP ó-              ó
+REP ô-              ô
+REP o-h             o
+REP ó-h             ó
+REP obr             robl
+REP õe              ãe
+REP õe              ão
+REP ós-s            oss
+REP ografista       ógrafo
+REP oi              ói
+REP ok              o.k.
+REP oky             óqui
+REP olh             óli
+REP ologista        ólogo
+REP om              on
+REP óm              ón
+REP ôm              ôn
+REP on              om
+REP ón              óm
+REP ôn              ôm
+REP otopo           oto-pô
+REP otopô           oto-pô
+REP oto-po          oto-pô
+REP ouquet          uquê
+REP outo            outro
+REP ozinh           inh
+REP pára-quedas     paraquedas
+REP perdo           perco
+REP ph              f
+REP ping            pingue-pongue
+REP ping-pong       pingue-pongue
+REP pong            pingue-pongue
+REP pre             pré-
+REP quadri          tetra
+REP Quait           Kuwait
+REP quinque         quinquê
+REP quinquê         quinquê
+REP quinqüe         quinque
+REP quinqüe         quinquê
+REP quinqüê         quinquê
+REP qüinque         quinque
+REP qüinque         quinquê
+REP qüinquê         quinquê
+REP quinqui         quinquí
+REP quinquí         quinquí
+REP quinqüi         quinqui
+REP quinqüi         quinquí
+REP quinqüí         quinquí
+REP qüinqui         quinqui
+REP qüinqui         quinquí
+REP qüinquí         quinquí
+REP q               que
+REP qs              ques
+REP qtde            quant
+REP qtdes           quant
+REP qu              c
+REP r               -
+REP r               r-
+REP r               rr
+REP r-              r
+REP r-bombas        res-bombas
+REP r-cond          res-cond
+REP rádio-          radio
+REP razesse         rouxesse
+REP razeu           rouxe
+REP razera          rouxera
+REP razeram         rouxeram
+REP rça             rsa
+REP res-de          r-de
+REP revigoração     revitalização
+REP ridão           ridade
+REP ridõe           ridade
+REP rsa             rça
+REP ria-se          r-se-ia
+REP ria-me          r-me-ia
+REP ria-te          r-te-ia
+REP ria-lhe         r-lhe-ia
+REP ria-lhes        r-lhes-ia
+REP ria-nos         r-nos-ia
+REP ria-vos         r-vos-ia
+REP riam-me         r-me-iam
+REP riam-te         r-te-iam
+REP riam-lhe        r-lhe-iam
+REP riam-lhes       r-lhes-iam
+REP riam-nos        r-nos-iam
+REP riam-vos        r-vos-iam
+REP roma            Roma
+REP s               -
+REP s               c
+REP s               ç
+REP s               s-
+REP s               z
+REP s-              -
+REP s-chuvas        -chuvas
+REP s-              s
+REP s-papel         -papéis
+REP sc              c
+REP scann           escân
+REP scaners         escâneres
+REP scanners        escâneres
+REP se              -se-
+REP selofo          celofa
+REP septec          septing
+REP septic          septing
+REP seromano        ser_humano
+REP serumano        ser_humano
+REP setec           septing
+REP sh              ch
+REP sh              che
+REP sie             sciê
+REP skat            esqueite
+REP skati           esqueiti
+REP sócio-          socio
+REP ss              ç
+REP ss              rs
+REP sse             ce
+REP ssi             ci
+REP stu             estú
+REP te              -te-
+REP tic-tac         tique-taque
+REP tid             di
+REP tiv             tativ
+REP tiva            ta
+REP tivide          tividade
+REP tm              tmic
+REP u               l
+REP u               o
+REP u               ú
+REP ú               u
+REP u               u-
+REP u-              u
+REP uait            uwait
+REP ubjúdice        ub_judice
+REP uç              lç
+REP uç              ls
+REP üe              uê
+REP üê              uê
+REP ulh             úli
+REP um              un
+REP úm              ún
+REP un              um
+REP ún              úm
+REP utoa            lto-a
+REP utob            lto-b
+REP utoc            lto-c
+REP utod            lto-d
+REP utoe            lto-e
+REP utof            lto-f
+REP utog            lto-g
+REP utoh            lto-h
+REP utoi            lto-i
+REP utol            lto-l
+REP utom            lto-m
+REP uton            lto-n
+REP utop            lto-p
+REP utor            lto-r
+REP utos            lto-s
+REP utov            lto-v
+REP v               env
+REP vídeo-          video
+REP vídeos-         video
+REP vigoração       vigência
+REP vos             -vos-
+REP x               cç
+REP x               ch
+REP ykjavík         iquiavique
+REP yongyang        ionguiangue
+REP z               s
+REP z               z-
+REP z-              z
+REP zação           dade
+REP zaçõe           dade
+REP zzavill         zavil
+REP g               gu
+REP -               _
+REP a               a_
+REP á               á_
+REP ã               ã_
+REP e               e_
+REP é               é_
+REP é               e_
+REP ê               ê_
+REP i               i_
+REP í               í_
+REP l               l_
+REP m               m_
+REP n               m_
+REP o               o_
+REP ó               o_
+REP ó               ó_
+REP ô               ô_
+REP r               r_
+REP s               s_
+REP u               u_
+REP ú               ú_
+REP x               x_
+REP z               z_
+REP f               f.
+REP s               s.
+REP v               v.
+REP x               x.
+REP a               s
+REP b               n
+REP b               v
+REP ç               l
+REP c               v
+REP c               x
+REP d               f
+REP d               s
+REP e               r
+REP e               w
+REP f               d
+REP f               g
+REP g               f
+REP g               h
+REP g               w
+REP h               g
+REP h               j
+REP i               o
+REP i               u
+REP j               h
+REP j               k
+REP k               j
+REP k               l
+REP l               ç
+REP l               k
+REP m               n
+REP n               b
+REP n               m
+REP o               i
+REP o               p
+REP p               o
+REP r               e
+REP r               t
+REP s               a
+REP s               d
+REP t               r
+REP t               y
+REP u               i
+REP u               y
+REP v               b
+REP v               c
+REP w               e
+REP w               q
+REP x               c
+REP x               z
+REP y               t
+REP y               u
+REP z               x
+REP -a              á
+REP -a              â
+REP -abunda         abundâ
+REP -aça            açã
+REP -acade          acadê
+REP -adapta         adaptá
+REP -adere          aderê
+REP -adiça          adiçã
+REP -administra     administrá
+REP -ae             aé
+REP -aerodina       aerodinâ
+REP -afrodi         afrodí
+REP -afrodisi       afrodisí
+REP -agra           agrá
+REP -ajusta         ajustá
+REP -alcooli        alcoolí
+REP -ale            alé
+REP -alego          alegó
+REP -alge           algé
+REP -ali            alí
+REP -alieni         aliení
+REP -amadori        amadorí
+REP -amari          amarí
+REP -ame            amé
+REP -ana            aná
+REP -anafila        anafilá
+REP -androge        androgê
+REP -ane            anê
+REP -antipa         antipá
+REP -anu            anú
+REP -aplica         aplicá
+REP -apo            apó
+REP -aqua           aquá
+REP -arabi          arabí
+REP -aristocra      aristocrá
+REP -arqueo         arqueó
+REP -arri           arrí
+REP -arti           artí
+REP -artri          artrí
+REP -asci           ascí
+REP -asfi           asfí
+REP -asma           asmá
+REP -aste           astê
+REP -ata            atá
+REP -ato            atô
+REP -audi           audí
+REP -audie          audiê
+REP -auto           autô
+REP -automa         automá
+REP -autorita       autoritá
+REP -autoritari     autoritarí
+REP -auxi           auxí
+REP -avia           aviã
+REP -avita          avitá
+REP -ba             bá
+REP -bacte          bacté
+REP -bacteriofa     bacteriofá
+REP -bali           balí
+REP -baqui          baquí
+REP -be             bé
+REP -be             bê
+REP -bença          bênçã
+REP -beribe         beribé
+REP -bi             bí
+REP -bio            bió
+REP -biogra         biográ
+REP -biotera        bioterá
+REP -blenorra       blenorrá
+REP -bo             bô
+REP -bola           bolã
+REP -brita          britâ
+REP -burgue         burguê
+REP -burocra        burocrá
+REP -ca             cá
+REP -ca             câ
+REP -ca             cã
+REP -cacogra        cacográ
+REP -cada           cadá
+REP -cadave         cadavé
+REP -cade           cadê
+REP -cafe           café
+REP -calca          calcá
+REP -calcula        calculá
+REP -campea         campeã
+REP -canceri        cancerí
+REP -capitali       capitalí
+REP -caque          caqué
+REP -cara           cará
+REP -carto          cartó
+REP -cartogra       cartográ
+REP -cata           catá
+REP -catali         catalí
+REP -cato           cató
+REP -catolici       catolicí
+REP -ce             cé
+REP -ce             cê
+REP -cefa           cefá
+REP -cefala         cefalá
+REP -centri         centrí
+REP -cesa           cesá
+REP -cetoge         cetogê
+REP -ci             cí
+REP -cicloge        ciclogê
+REP -ciclogene      ciclogené
+REP -cie            ciê
+REP -cienti         cientí
+REP -cili           cilí
+REP -cine           ciné
+REP -circunfere     circunferê
+REP -citoto         citotó
+REP -civi           civí
+REP -cla            clá
+REP -cli            clí
+REP -clori          clorí
+REP -co             có
+REP -co             cô
+REP -cocai          cocaí
+REP -coincide       coincidê
+REP -cole           colé
+REP -coleça         coleçã
+REP -coleri         colerí
+REP -coline         coliné
+REP -coloniali      colonialí
+REP -combusti       combustí
+REP -come           comé
+REP -compati        compatí
+REP -complace       complacê
+REP -comuni         comuní
+REP -conci          concí
+REP -concorre       concorrê
+REP -conexa         conexã
+REP -configura      configurá
+REP -conforta       confortá
+REP -conscie        consciê
+REP -conti          contí
+REP -corolo         coroló
+REP -corpo          corpó
+REP -corporativi    corporativí
+REP -cosme          cosmé
+REP -cra            crá
+REP -cre            cré
+REP -creta          cretá
+REP -cri            crí
+REP -criptoga       criptogâ
+REP -cro            crô
+REP -croma          cromá
+REP -croni          croní
+REP -cu             cú
+REP -da             dá
+REP -de             dé
+REP -deci           decí
+REP -defensa        defensá
+REP -deli           delí
+REP -deme           demê
+REP -democra        democrá
+REP -demoni         demoní
+REP -demonstra      demonstrá
+REP -dese           desé
+REP -desperdi       desperdí
+REP -destrui        destruí
+REP -determina      determiná
+REP -di             dí
+REP -dia            diá
+REP -dia            diâ
+REP -diabe          diabé
+REP -diafore        diaforé
+REP -diagno         diagnó
+REP -diate          diaté
+REP -dida           didá
+REP -diege          diegé
+REP -difi           difí
+REP -difte          difté
+REP -digeri         digerí
+REP -dimensiona     dimensioná
+REP -dina           diná
+REP -dina           dinâ
+REP -discine        disciné
+REP -disente        disenté
+REP -dispe          dispé
+REP -disri          disrí
+REP -distrai        distraí
+REP -diure          diuré
+REP -do             dó
+REP -documenta      documentá
+REP -dogma          dogmá
+REP -dogmati        dogmatí
+REP -dome           domé
+REP -domestica      domesticá
+REP -domi           domí
+REP -domina         dominâ
+REP -dormito        dormitó
+REP -drama          dramá
+REP -du             dú
+REP -duali          dualí
+REP -dueli          duelí
+REP -dura           durá
+REP -e              é
+REP -eclesia        eclesiá
+REP -eclesias       eclesiás
+REP -econo          econô
+REP -efica          eficá
+REP -ela            elá
+REP -elapi          elapí
+REP -ele            elé
+REP -elega          elegâ
+REP -eletrodome     eletrodomé
+REP -eli            elí
+REP -eliti          elití
+REP -eloque         eloquê
+REP -embriona       embrioná
+REP -eme            emé
+REP -emine          eminê
+REP -emulsiona      emulsioná
+REP -enciclope      enciclopé
+REP -endireita      endireitá
+REP -eneae          eneaé
+REP -energe         energé
+REP -enigma         enigmá
+REP -enzima         enzimá
+REP -epice          epicê
+REP -epide          epidê
+REP -epile          epilé
+REP -episo          episó
+REP -eremi          eremí
+REP -ero            eró
+REP -esfe           esfé
+REP -espeta         espetá
+REP -espia          espiã
+REP -esquema        esquemá
+REP -esta           está
+REP -estabiliza     estabilizá
+REP -este           esté
+REP -estereosco     estereoscó
+REP -esteriliza     esterilizá
+REP -estetosco      estetoscó
+REP -estrutura      estruturá
+REP -estu           estú
+REP -eti            etí
+REP -europei        europeí
+REP -evange         evangé
+REP -excele         excelê
+REP -excita         excitá
+REP -executa        executá
+REP -experie        experiê
+REP -explicato      explicató
+REP -explora        explorá
+REP -exponi         exponí
+REP -fa             fá
+REP -fale           falê
+REP -fami           famí
+REP -fanta          fantá
+REP -fasci          fascí
+REP -fe             fé
+REP -femini         feminí
+REP -ferroele       ferroelé
+REP -ferromagne     ferromagné
+REP -fi             fí
+REP -ficia          ficiá
+REP -ficti          fictí
+REP -filoso         filosó
+REP -financia       financiá
+REP -fise           fisé
+REP -flexi          flexí
+REP -flo            fló
+REP -fo             fó
+REP -fo             fô
+REP -fone           fonê
+REP -fonema         fonemá
+REP -foto           fotó
+REP -fotoge         fotogê
+REP -fotogra        fotográ
+REP -fra            frá
+REP -france         francê
+REP -fundi          fundí
+REP -ga             gá
+REP -ga             gâ
+REP -gala           galá
+REP -gaso           gasó
+REP -gasoge         gasogê
+REP -ge             gê
+REP -gene           gené
+REP -geome          geomé
+REP -germa          germâ
+REP -gestiona       gestioná
+REP -gina           giná
+REP -glo            gló
+REP -gno            gnó
+REP -go             gó
+REP -governi        governí
+REP -gra            grá
+REP -grafo          grafó
+REP -grafo          grafô
+REP -grama          gramá
+REP -he             hé
+REP -hele           helê
+REP -hemofi         hemofí
+REP -hemorra        hemorrá
+REP -hepa           hepá
+REP -heroi          heroí
+REP -herpe          herpé
+REP -hidrofo        hidrofó
+REP -hidroge        hidrogê
+REP -higie          higiê
+REP -histe          histé
+REP -hora           horá
+REP -humani         humaní
+REP -i              í
+REP -ibe            ibé
+REP -iberi          iberí
+REP -igualita       igualitá
+REP -igualitari     igualitarí
+REP -ilumini        iluminí
+REP -imobilia       imobiliá
+REP -imputa         imputá
+REP -ince           incê
+REP -incri          incrí
+REP -indone         indoné
+REP -indulge        indulgê
+REP -induta         indutâ
+REP -inflaciona     inflacioná
+REP -inicializa     inicializá
+REP -inocula        inoculá
+REP -intelige       inteligê
+REP -intoxica       intoxicá
+REP -inu            inú
+REP -iro            irô
+REP -jornali        jornalí
+REP -jui            juí
+REP -juri           jurí
+REP -la             lá
+REP -laborato       laborató
+REP -larva          larvá
+REP -le             lé
+REP -le             lê
+REP -lenda          lendá
+REP -leta           letá
+REP -leuce          leucê
+REP -li             lí
+REP -litera         literá
+REP -litu           litú
+REP -lo             ló
+REP -logari         logarí
+REP -logi           logí
+REP -lu             lú
+REP -lue            lué
+REP -luna           luná
+REP -luterani       luteraní
+REP -ma             má
+REP -ma             mã
+REP -magne          magné
+REP -mala           malá
+REP -marxi          marxí
+REP -mate           maté
+REP -me             mé
+REP -me             mê
+REP -meca           mecâ
+REP -memo           memó
+REP -meta           metá
+REP -metafi         metafí
+REP -mi             mí
+REP -miaste         miastê
+REP -miliona        milioná
+REP -ministe        ministé
+REP -mne            mné
+REP -mo             mó
+REP -mona           moná
+REP -monitora       monitorá
+REP -monopo         monopó
+REP -monopoli       monopolí
+REP -mu             mú
+REP -mutage         mutagê
+REP -na             ná
+REP -nacionali      nacionalí
+REP -narco          narcó
+REP -nazi           nazí
+REP -ne             nê
+REP -nego           negó
+REP -negocia        negociá
+REP -neopla         neoplá
+REP -neura          neurá
+REP -ni             ní
+REP -nivela         nivelá
+REP -no             nó
+REP -no             nô
+REP -nobilia        nobiliá
+REP -noti           notí
+REP -nu             nú
+REP -numera         numerá
+REP -o              ó
+REP -obrigata       obrigatá
+REP -observato      observató
+REP -obsta          obstá
+REP -oculta         ocultá
+REP -ocupa          ocupá
+REP -ofi            ofí
+REP -ofta           oftá
+REP -oli            olí
+REP -oliga          oligá
+REP -orga           orgá
+REP -orga           orgâ
+REP -ota            otá
+REP -oxida          oxidá
+REP -oxige          oxigê
+REP -pa             pá
+REP -pa             pâ
+REP -paradisi       paradisí
+REP -parali         paralí
+REP -parasi         parasí
+REP -parasita       parasitá
+REP -parlamentari   parlamentarí
+REP -parti          partí
+REP -paupe          paupé
+REP -pe             pé
+REP -peri           perí
+REP -perio          perió
+REP -permea         permeá
+REP -pestile        pestilê
+REP -pioge          piogê
+REP -pire           piré
+REP -pla            plá
+REP -po             pó
+REP -poe            poé
+REP -pole           polê
+REP -poli           polí
+REP -porta          portá
+REP -pote           potê
+REP -pra            prá
+REP -pre            prê
+REP -pro            pró
+REP -programa       programá
+REP -propaga        propagá
+REP -psicana        psicaná
+REP -psicanali      psicanalí
+REP -psico          psicó
+REP -psiquia        psiquiá
+REP -pu             pú
+REP -publicita      publicitá
+REP -qui            quí
+REP -ra             rá
+REP -radiogra       radiográ
+REP -refere         referê
+REP -regenera       regenerá
+REP -renova         renová
+REP -renu           renú
+REP -reproduto      reprodutó
+REP -resfria        resfriá
+REP -salda          saldã
+REP -sarca          sarcá
+REP -sate           saté
+REP -sauda          saudá
+REP -se             sé
+REP -seleciona      selecioná
+REP -sensi          sensí
+REP -sime           simé
+REP -simpa          simpá
+REP -so             sô
+REP -soma           somá
+REP -sovie          sovié
+REP -suficie        suficiê
+REP -sugestiona     sugestioná
+REP -sustenta       sustentá
+REP -ta             tá
+REP -te             té
+REP -te             tê
+REP -tei            teí
+REP -telesco        telescó
+REP -teocra         teocrá
+REP -tera           terá
+REP -terna          terná
+REP -terrori        terrorí
+REP -teta           tetâ
+REP -ti             tí
+REP -to             tó
+REP -to             tô
+REP -torpe          torpé
+REP -totalita       totalitá
+REP -tra            trá
+REP -translu        translú
+REP -transpare      transparê
+REP -trigonome      trigonomé
+REP -tro            tró
+REP -tu             tú
+REP -u              ú
+REP -unita          unitá
+REP -universita     universitá
+REP -urbani         urbaní
+REP -usua           usuá
+REP -utilita        utilitá
+REP -va             vá
+REP -ve             vé
+REP -vei            veí
+REP -velo           veló
+REP -vene           vené
+REP -vi             ví
+REP -vila           vilã
+REP -viole          violê
+REP -visa           visã
+REP -viso           visó
+REP -vive           vivê
+REP -voca           vocá
+REP -vulca          vulcã
+REP -vulnera        vulnerá
+REP -zi             zí
+REP -zigo           zigó
+REP -zinco          zincó
+
+
+# ================================================================
+# PREFIXOS - Estão identificados por letras acentuadas.
+#            ÀÁÂÃÄÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÑÝàáâãäèéêëìíîïòóôõöùúûüñÿ
+# ================================================================
+
 PFX À Y 3
 PFX À   0     re      [^rs]
 PFX À   0     rer     r
@@ -35,6 +1203,7 @@ PFX É   0     neo    [^oóôhrs]
 PFX É   0     neo-   [oóôh]
 PFX É   0     neor   r
 PFX É   0     neos   s
+
 
 PFX Ê Y 1
 PFX Ê   0     tragi   .
@@ -147,6 +1316,8 @@ PFX é   0     hexa-  [aáâh]
 PFX é   0     hexar  r
 PFX é   0     hexas  s
 
+
+
 PFX ê Y 1
 PFX ê   0     penta   .
 
@@ -208,6 +1379,7 @@ PFX ü   0     ex-     .
 PFX ñ Y 1
 PFX ñ   0     soto-   .
 
+ 
 # ================================================================
 # SUFIXOS - Representados pelo alfabeto maiúsculo+números
 #           ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 
@@ -5128,3 +6300,443 @@ SFX j   r       dorzão     r
 SFX j   r       dorona     r
 SFX j   r       dorezões   r
 SFX j   r       doronas    r
+
+# VERBOS Unipessoais -t- Terceira pessoa do singular e do plural
+
+SFX t Y 46
+SFX t   0     a      r
+SFX t   0     á      r
+SFX t   0     am     r
+SFX t   0     ão     r
+SFX t   0     em     r
+SFX t   0     ia     r
+SFX t   0     iam    r
+SFX t   ar    e      [^ge]ar
+SFX t   ar    em     [^ge]ar
+SFX t   ar    ie     ear
+SFX t   ar    iem    ear
+SFX t   ar    ue     gar
+SFX t   ar    uem    gar
+SFX t   ar    ou     ar
+SFX t   cer   ça     cer
+SFX t   cer   çam    cer
+SFX t   er    a      [^c]er
+SFX t   er    am     [^c]er
+SFX t   er    ia     er
+SFX t   er    iam    er
+SFX t   er    ida    er
+SFX t   er    idas   er
+SFX t   er    ido    er
+SFX t   er    idos   er
+SFX t   ir    a      ir
+SFX t   ir    am     ir
+SFX t   ir    e      ir
+SFX t   ir    em     ir
+SFX t   r     0      [^e]ar
+SFX t   ar    ia     ear
+SFX t   r     0      er
+SFX t   r     a      ir
+SFX t   r     am     ir
+SFX t   r     da     [ai]r
+SFX t   r     das    [ai]r
+SFX t   r     do     [ai]r
+SFX t   r     dos    [ai]r
+SFX t   r     m      [^e]ar
+SFX t   ar    iam    ear
+SFX t   r     m      er
+SFX t   r     ndo    r
+SFX t   r     sse    r
+SFX t   r     ssem   r
+SFX t   r     u      [ei]r
+SFX t   r     va     ar
+SFX t   r     vam    ar
+
+# VERBOS Unipessoais -u- Terceira pessoa do singular
+
+SFX u Y 27
+SFX u   ar   ia   ear
+SFX u   ar   ou   ear
+SFX u   r   va    ear
+SFX u   0   a     ear
+SFX u   0   á     ear
+SFX u   0   ia    ear
+SFX u   ar   ie   ear
+SFX u   r   sse   ear
+SFX u   0   em    ear
+SFX u   r   ndo   ear
+SFX u   r   da    ear
+SFX u   r   das   ear
+SFX u   r   do    ear
+SFX u   r   dos   ear
+SFX u   er    a     [^c]er
+SFX u   r     0     er
+SFX u   r     ndo   er
+SFX u   0     a     er
+SFX u   0     á     er
+SFX u   0     ia    er
+SFX u   r     sse   er
+SFX u   r     u     er
+SFX u   er    ia    er
+SFX u   er    ida   er
+SFX u   er    idas  er
+SFX u   er    ido   er
+SFX u   er    idos  er
+
+
+# VERBOS OUTROS -w- Terminação:  FAISCAR, RESFOLEGAR, APAZIGUAR... 
+
+SFX w Y 352
+SFX w   iscar    ísca         iscar
+SFX w   r        da           iscar
+SFX w   r        das          iscar
+SFX w   r        do           iscar
+SFX w   r        dos          iscar
+SFX w   r        i            iscar
+SFX w   r        is           iscar
+SFX w   iscar    íscam        iscar
+SFX w   r        mos          iscar
+SFX w   r        ndo          iscar
+SFX w   0        iscar        iscar
+SFX w   0        a            iscar
+SFX w   0        á            iscar
+SFX w   0        am           iscar
+SFX w   ar       áramos       iscar
+SFX w   0        ão           iscar
+SFX w   0        as           iscar
+SFX w   0        ás           iscar
+SFX w   0        des          iscar
+SFX w   0        ei           iscar
+SFX w   0        eis          iscar
+SFX w   ar       áreis        iscar
+SFX w   0        em           iscar
+SFX w   0        emos         iscar
+SFX w   0        es           iscar
+SFX w   0        ia           iscar
+SFX w   0        iam          iscar
+SFX w   0        íamos        iscar
+SFX w   0        ias          iscar
+SFX w   0        íeis         iscar
+SFX w   0        mos          iscar
+SFX w   iscar    íscas        iscar
+SFX w   r        sse          iscar
+SFX w   ar       ásseis       iscar
+SFX w   r        ssem         iscar
+SFX w   ar       ássemos      iscar
+SFX w   r        sses         iscar
+SFX w   r        ste          iscar
+SFX w   r        stes         iscar
+SFX w   r        va           iscar
+SFX w   r        vam          iscar
+SFX w   ar       ávamos       iscar
+SFX w   r        vas          iscar
+SFX w   ar       áveis        iscar
+SFX w   iscar    ísco         iscar
+SFX w   ar       ou           iscar
+SFX w   iscar    ísque        iscar
+SFX w   car      quei         iscar
+SFX w   car      queis        iscar
+SFX w   iscar    ísquem       iscar
+SFX w   car      quemos       iscar
+SFX w   iscar    ísques       iscar
+SFX w   olegar   ólega        folegar
+SFX w   r        da           folegar
+SFX w   r        das          folegar
+SFX w   r        do           folegar
+SFX w   r        dos          folegar
+SFX w   r        i            folegar
+SFX w   r        is           folegar
+SFX w   olegar   ólegam       folegar
+SFX w   r        mos          folegar
+SFX w   r        ndo          folegar
+SFX w   0        a            folegar
+SFX w   0        á            folegar
+SFX w   0        am           folegar
+SFX w   ar       áramos       folegar
+SFX w   0        ão           folegar
+SFX w   0        as           folegar
+SFX w   0        ás           folegar
+SFX w   0        des          folegar
+SFX w   0        ei           folegar
+SFX w   0        eis          folegar
+SFX w   ar       áreis        folegar
+SFX w   0        em           folegar
+SFX w   0        emos         folegar
+SFX w   0        es           folegar
+SFX w   0        ia           folegar
+SFX w   0        iam          folegar
+SFX w   0        íamos        folegar
+SFX w   0        ias          folegar
+SFX w   0        íeis         folegar
+SFX w   0        mos          folegar
+SFX w   olegar   ólegas       folegar
+SFX w   r        sse          folegar
+SFX w   ar       ásseis       folegar
+SFX w   r        ssem         folegar
+SFX w   ar       ássemos      folegar
+SFX w   r        sses         folegar
+SFX w   r        ste          folegar
+SFX w   r        stes         folegar
+SFX w   r        va           folegar
+SFX w   r        vam          folegar
+SFX w   ar       ávamos       folegar
+SFX w   r        vas          folegar
+SFX w   ar       áveis        folegar
+SFX w   olegar   ólego        folegar
+SFX w   ar       ou           folegar
+SFX w   olegar   ólegue       folegar
+SFX w   ar       uei          folegar
+SFX w   ar       ueis         folegar
+SFX w   olegar   óleguem      folegar
+SFX w   ar       uemos        folegar
+SFX w   olegar   ólegues      folegar
+SFX w   0        a            aziguar
+SFX w   0        á            aziguar
+SFX w   0        am           aziguar
+SFX w   0        ão           aziguar
+SFX w   0        as           aziguar
+SFX w   0        ás           aziguar
+SFX w   0        des          aziguar
+SFX w   0        ei           aziguar
+SFX w   0        eis          aziguar
+SFX w   0        em           aziguar
+SFX w   0        emos         aziguar
+SFX w   0        es           aziguar
+SFX w   0        ia           aziguar
+SFX w   0        iam          aziguar
+SFX w   0        íamos        aziguar
+SFX w   0        ias          aziguar
+SFX w   0        íeis         aziguar
+SFX w   0        mos          aziguar
+SFX w   ar       áramos       aziguar
+SFX w   ar       áreis        aziguar
+SFX w   ar       ásseis       aziguar
+SFX w   ar       ássemos      aziguar
+SFX w   ar       ávamos       aziguar
+SFX w   ar       áveis        aziguar
+SFX w   ar       o            aziguar
+SFX w   ar       ou           aziguar
+SFX w   r        0            aziguar
+SFX w   r        da           aziguar
+SFX w   r        das          aziguar
+SFX w   r        do           aziguar
+SFX w   r        dos          aziguar
+SFX w   r        i            aziguar
+SFX w   r        is           aziguar
+SFX w   r        m            aziguar
+SFX w   r        mos          aziguar
+SFX w   r        ndo          aziguar
+SFX w   r        s            aziguar
+SFX w   r        sse          aziguar
+SFX w   r        ssem         aziguar
+SFX w   r        sses         aziguar
+SFX w   r        ste          aziguar
+SFX w   r        stes         aziguar
+SFX w   r        va           aziguar
+SFX w   r        vam          aziguar
+SFX w   r        vas          aziguar
+SFX w   uar      úe           aziguar
+SFX w   uar      üei          aziguar
+SFX w   uar      üeis         aziguar
+SFX w   uar      úem          aziguar
+SFX w   uar      üemos        aziguar
+SFX w   uar      úes          aziguar
+SFX w   er       0            prazer
+SFX w   er       a            prazer
+SFX w   er       ais          prazer
+SFX w   er       am           prazer
+SFX w   er       amos         prazer
+SFX w   er       as           prazer
+SFX w   r        0            prazer
+SFX w   r        i            prazer
+SFX w   r        is           prazer
+SFX w   r        m            prazer
+SFX w   r        mos          prazer
+SFX w   r        ndo          prazer
+SFX w   0        á            prazer
+SFX w   0        ão           prazer
+SFX w   0        ás           prazer
+SFX w   0        des          prazer
+SFX w   0        ei           prazer
+SFX w   0        eis          prazer
+SFX w   0        em           prazer
+SFX w   0        emos         prazer
+SFX w   0        es           prazer
+SFX w   0        ia           prazer
+SFX w   0        iam          prazer
+SFX w   0        íamos        prazer
+SFX w   0        ias          prazer
+SFX w   0        íeis         prazer
+SFX w   0        mos          prazer
+SFX w   r        s            prazer
+SFX w   er       ia           prazer
+SFX w   er       iam          prazer
+SFX w   er       íamos        prazer
+SFX w   er       ias          prazer
+SFX w   er       ida          prazer
+SFX w   er       idas         prazer
+SFX w   er       ido          prazer
+SFX w   er       idos         prazer
+SFX w   er       íeis         prazer
+SFX w   er       o            prazer
+SFX w   azer     ouve         prazer
+SFX w   azer     ouvemos      prazer
+SFX w   azer     ouver        prazer
+SFX w   azer     ouvera       prazer
+SFX w   azer     ouveram      prazer
+SFX w   azer     ouvéramos    prazer
+SFX w   azer     ouveras      prazer
+SFX w   azer     ouverdes     prazer
+SFX w   azer     ouvéreis     prazer
+SFX w   azer     ouverem      prazer
+SFX w   azer     ouveres      prazer
+SFX w   azer     ouvermos     prazer
+SFX w   azer     ouvesse      prazer
+SFX w   azer     ouvésseis    prazer
+SFX w   azer     ouvessem     prazer
+SFX w   azer     ouvéssemos   prazer
+SFX w   azer     ouvesses     prazer
+SFX w   azer     ouveste      prazer
+SFX w   azer     ouvestes     prazer
+SFX w   ir       e            balir
+SFX w   ir       em           balir
+SFX w   ir       es           balir
+SFX w   r        0            balir
+SFX w   r        a            balir
+SFX w   r        am           balir
+SFX w   ir       íamos        balir
+SFX w   r        as           balir
+SFX w   r        da           balir
+SFX w   r        das          balir
+SFX w   r        do           balir
+SFX w   r        dos          balir
+SFX w   ir       íeis         balir
+SFX w   r        mos          balir
+SFX w   r        ndo          balir
+SFX w   0        a            balir
+SFX w   0        á            balir
+SFX w   0        am           balir
+SFX w   ir       íramos       balir
+SFX w   0        ão           balir
+SFX w   0        as           balir
+SFX w   0        ás           balir
+SFX w   0        des          balir
+SFX w   0        ei           balir
+SFX w   0        eis          balir
+SFX w   ir       íreis        balir
+SFX w   0        em           balir
+SFX w   0        emos         balir
+SFX w   0        es           balir
+SFX w   0        ia           balir
+SFX w   0        iam          balir
+SFX w   0        íamos        balir
+SFX w   0        ias          balir
+SFX w   0        íeis         balir
+SFX w   0        mos          balir
+SFX w   r        s            balir
+SFX w   r        sse          balir
+SFX w   ir       ísseis       balir
+SFX w   r        ssem         balir
+SFX w   ir       íssemos      balir
+SFX w   r        sses         balir
+SFX w   r        ste          balir
+SFX w   r        stes         balir
+SFX w   r        u            balir
+SFX w   uçar     úça          esmiuçar
+SFX w   r        da           esmiuçar
+SFX w   r        das          esmiuçar
+SFX w   r        do           esmiuçar
+SFX w   r        dos          esmiuçar
+SFX w   r        i            esmiuçar
+SFX w   r        is           esmiuçar
+SFX w   uçar     úçam         esmiuçar
+SFX w   r        mos          esmiuçar
+SFX w   r        ndo          esmiuçar
+SFX w   0        a            esmiuçar
+SFX w   0        á            esmiuçar
+SFX w   0        am           esmiuçar
+SFX w   ar       áramos       esmiuçar
+SFX w   0        ão           esmiuçar
+SFX w   0        as           esmiuçar
+SFX w   0        ás           esmiuçar
+SFX w   0        des          esmiuçar
+SFX w   0        ei           esmiuçar
+SFX w   0        eis          esmiuçar
+SFX w   ar       áreis        esmiuçar
+SFX w   0        em           esmiuçar
+SFX w   0        emos         esmiuçar
+SFX w   0        es           esmiuçar
+SFX w   0        ia           esmiuçar
+SFX w   0        iam          esmiuçar
+SFX w   0        íamos        esmiuçar
+SFX w   0        ias          esmiuçar
+SFX w   0        íeis         esmiuçar
+SFX w   0        mos          esmiuçar
+SFX w   uçar     úças         esmiuçar
+SFX w   r        sse          esmiuçar
+SFX w   ar       ásseis       esmiuçar
+SFX w   r        ssem         esmiuçar
+SFX w   ar       ássemos      esmiuçar
+SFX w   r        sses         esmiuçar
+SFX w   r        ste          esmiuçar
+SFX w   r        stes         esmiuçar
+SFX w   r        va           esmiuçar
+SFX w   r        vam          esmiuçar
+SFX w   ar       ávamos       esmiuçar
+SFX w   r        vas          esmiuçar
+SFX w   ar       áveis        esmiuçar
+SFX w   uçar     úce          esmiuçar
+SFX w   çar      cei          esmiuçar
+SFX w   çar      ceis         esmiuçar
+SFX w   uçar     úcem         esmiuçar
+SFX w   çar      cemos        esmiuçar
+SFX w   uçar     úces         esmiuçar
+SFX w   uçar     úço          esmiuçar
+SFX w   ar       ou           esmiuçar
+SFX w   ir       e            bramir
+SFX w   ir       em           bramir
+SFX w   ir       es           bramir
+SFX w   r        bramir       bramir
+SFX w   r        a            bramir
+SFX w   r        am           bramir
+SFX w   ir       íamos        bramir
+SFX w   r        as           bramir
+SFX w   r        da           bramir
+SFX w   r        das          bramir
+SFX w   r        do           bramir
+SFX w   r        dos          bramir
+SFX w   ir       íeis         bramir
+SFX w   r        mos          bramir
+SFX w   r        ndo          bramir
+SFX w   0        bramir       bramir
+SFX w   0        a            bramir
+SFX w   0        á            bramir
+SFX w   0        am           bramir
+SFX w   ir       íramos       bramir
+SFX w   0        ão           bramir
+SFX w   0        as           bramir
+SFX w   0        ás           bramir
+SFX w   0        des          bramir
+SFX w   0        ei           bramir
+SFX w   0        eis          bramir
+SFX w   ir       íreis        bramir
+SFX w   0        em           bramir
+SFX w   0        emos         bramir
+SFX w   0        es           bramir
+SFX w   0        ia           bramir
+SFX w   0        iam          bramir
+SFX w   0        íamos        bramir
+SFX w   0        ias          bramir
+SFX w   0        íeis         bramir
+SFX w   0        mos          bramir
+SFX w   r        s            bramir
+SFX w   r        sse          bramir
+SFX w   ir       ísseis       bramir
+SFX w   r        ssem         bramir
+SFX w   ir       íssemos      bramir
+SFX w   r        sses         bramir
+SFX w   r        ste          bramir
+SFX w   r        stes         bramir
+SFX w   r        u            bramir
+SFX w   r        0            bramir
+
+
