@@ -1,9 +1,13 @@
-# zettlr_pr-BR_files
-pt-BR files of Brazillian Portuguese that did not crached Zettlr
+## zettlr_pr-BR_files
+pt-BR files from LibreOffice for Brazillian Portuguese (pt-BR) craches Zettlr
 
+These files were optimized for Zettlr capabilities by
+* Saving them for with UTF-8 char set encoding
+* Removing ênclises and mesóclises rules from .aff file 
+So, it seems Latin-rooted languages are soo much refined for the German capabilities on language,LoL.
 
+In the future, I wish to return ênclises and only keep mesóclises out since them are linguistic oldfashion for current language.
 
-the .aff file of nspell dictionary crashed the Zettlr editor. So I mixed some files and it worked for me.
-I intend to improve the .aff with the time to find where it is crashing.
+So, I wish you enjoy these files. You should install them on Zettlr config folder by following the usual procedure described on:
 
-I uploaded nspell .aff file than people can use it as default and help we find where it crashes Zettlr
+https://docs.zettlr.com/en/reference/spell-checking/#add-new-dictionaries
